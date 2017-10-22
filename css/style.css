@@ -321,10 +321,19 @@ body {
 
 .project-header {
     text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.project-header h2 {
+    text-align: center;
+    border: solid 2px rgba(0, 0, 0, 0.125);
+    /* border-color: rgba(0, 0, 0, 0.125); */
+    letter-spacing: 0.225em;
 }
 
 .columns {
-    width: 400px;
+    width: 300px;
     border: 2px solid blue;
 }
 
@@ -334,11 +343,11 @@ body {
 }
 
 .rect {
-    height: 500px;
-    padding: 20px 20px 20px 20px;
+    height: 400px;
+    /* padding: 20px 20px 20px 20px; */
 }
 
 .sq {
-    height: 400px;
-    padding: 20px 20px 20px 20px;
+    height: 300px;
+    /* padding: 20px 20px 20px 20px; */
 }
