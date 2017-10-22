@@ -1,0 +1,146 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <title>POLINAO</title>
+</head>
+
+<body>
+    <!-- <div class="menu-list"></div> -->
+    <div class="full">
+
+        <div class="wrap">
+            <div class="start-screen">
+                <div class="main">
+                    <div class="header">
+                        <div class="logo">
+                            <h1>Polina</h1>
+                        </div>
+
+                        <a href="#" class="menu-ham">
+                            <img src="css/img/ham.png" alt="">
+                        </a>
+
+
+
+                    </div>
+                    <div class="main-text">
+                        <h1>POLINA OLEMSKAIA</h1>
+                        <p>creative coder and designer</p>
+                    </div>
+                    <div class="main-arrow">
+                        <img src="css/img/arrow.png" alt="">
+
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="project-screen">
+                <div class="project-header">
+                    <h2>PROJECTS</h2>
+                </div>
+                <div class="grid">
+                    <!-- first-col -->
+                    <div class="columns">
+                        <div class="project-image rect">
+                            <img src="" alt="" srcset="">
+                        </div>
+                        <div class="project-image sq">
+                            <img src="" alt="" srcset="">
+                        </div>
+                        <div class="project-image rect">
+                            <img src="" alt="" srcset="">
+                        </div>
+                        <div class="project-image sq">
+                            <img src="" alt="" srcset="">
+                        </div>
+                    </div>
+
+                    <!-- second-col -->
+                    <div class="columns">
+                        <div class="project-image sq">
+                            <img src="" alt="" srcset="">
+                        </div>
+                        <div class="project-image rect">
+                            <img src="" alt="" srcset="">
+                        </div>
+                        <div class="project-image sq">
+                            <img src="" alt="" srcset="">
+                        </div>
+                        <div class="project-image rect">
+                            <img src="" alt="" srcset="">
+                        </div>
+                    </div>
+
+                    <!-- third-col -->
+                    <div class="columns">
+                        <div class="project-image rect">
+                            <img src="" alt="" srcset="">
+                        </div>
+                        <div class="project-image sq">
+                            <img src="" alt="" srcset="">
+                        </div>
+                        <div class="project-image rect">
+                            <img src="" alt="" srcset="">
+                        </div>
+                        <div class="project-image sq">
+                            <img src="" alt="" srcset="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <a href="#" class="close-menu">
+                <img src="css/img/close.png" alt=""></a>
+            <div class="menu-inner">
+                <h3>projects</h3>
+            </div>
+            <div class="menu-inner">
+                <h3>about</h3>
+            </div>
+            <div class="menu-inner">
+                <h3>contact</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+<script>
+    $(function() {
+        var link = $('.menu-ham');
+        var close = $('.close-menu');
+        var menu = $('.menu');
+        var wrap = $('.wrap');
+
+        link.on("click", function(event) {
+            event.preventDefault();
+            menu.removeClass('menu__passive');
+            wrap.removeClass('wrap__passive');
+            menu.addClass('menu__active');
+            wrap.addClass('wrap__active');
+        });
+
+        close.on("click", function(event) {
+            event.preventDefault();
+            menu.removeClass('menu__active');
+            wrap.removeClass('wrap__active');
+            menu.addClass('menu__passive');
+            wrap.addClass('wrap__passive');
+        });
+    });
+</script>
+
+</html>
