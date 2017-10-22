@@ -265,6 +265,13 @@ body {
 .logo {
     padding-right: 20px;
     padding-left: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.logo h1 {
+    font-size: 20px;
 }
 
 .main-text {
@@ -274,7 +281,7 @@ body {
     align-items: center;
     position: relative;
     text-transform: uppercase;
-    margin-top: 75px;
+    margin-top: 160px;
 }
 
 .main-text h1 {
@@ -449,7 +456,7 @@ body {
     transition: 1s;
 }
 
-h3 {
+.project-image h3 {
     color: white;
     display: flex;
     align-items: center;
@@ -540,4 +547,8 @@ h3 {
 
 .des-wrapper__passive {
     display: none;
+}
+
+.links-project h3 {
+    text-align: center;
 }
