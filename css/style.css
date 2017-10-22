@@ -333,7 +333,7 @@ body {
 }
 
 .columns {
-    width: 300px;
+    width: 320px;
     border: 2px solid blue;
 }
 
@@ -343,11 +343,60 @@ body {
 }
 
 .rect {
-    height: 400px;
-    /* padding: 20px 20px 20px 20px; */
+    height: 440px;
+    padding: 10px 10px 10px 10px;
 }
 
 .sq {
-    height: 300px;
-    /* padding: 20px 20px 20px 20px; */
+    height: 320px;
+    padding: 10px 10px 10px 10px;
+}
+
+.s-f {
+    max-height: 300px;
+    max-width: 300px;
+    background: url(img/2-1.jpg) no-repeat center !important;
+    background-size: cover;
+}
+
+.t-s {
+    max-height: 300px;
+    max-width: 300px;
+    background: url(img/3-2.jpg) no-repeat center !important;
+    background-size: cover;
+}
+
+.f-s {
+    max-height: 300px;
+    max-width: 300px;
+    background: url(img/1-2.jpg) no-repeat center !important;
+    background-size: cover;
+}
+
+.f-fourth {
+    max-height: 300px;
+    max-width: 300px;
+    background: url(img/1-4.jpg) no-repeat center !important;
+    background-size: cover;
+}
+
+.s-t {
+    max-height: 300px;
+    max-width: 300px;
+    background: url(img/2-3.jpg) no-repeat center !important;
+    background-size: cover;
+}
+
+.t-fourth {
+    max-height: 300px;
+    max-width: 300px;
+    background: url(img/3-4.jpg) no-repeat center !important;
+    background-size: cover;
+}
+
+.s-s {
+    max-height: 420px;
+    max-width: 300px;
+    background: url(img/2-2.jpg) no-repeat center !important;
+    background-size: cover;
 }
