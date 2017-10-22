@@ -483,15 +483,6 @@ h3 {
     background-size: cover;
 }
 
-.des-wrapper {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.8);
-}
-
 .description {
     align-items: center;
     display: flex;
@@ -531,4 +522,22 @@ h3 {
 .close img {
     width: 40px;
     height: 40px;
+}
+
+.des-wrapper__active {
+    display: flex;
+    z-index: 10;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.des-wrapper__passive {
+    display: none;
 }

@@ -112,9 +112,12 @@
             </div>
         </div>
     </div>
-    <div class="des-wrapper">
+
+
+
+    <div class="des-wrapper_31 des-wrapper__passive">
         <div class="description">
-            <div class="close">
+            <div class="close close31">
                 <a href="#">
                     <img src="css/img/close.png" alt=""></a>
             </div>
@@ -145,6 +148,10 @@
         var menu = $('.menu');
         var wrap = $('.wrap');
 
+        var click31 = $('.t-f');
+        var desc31 = $('.des-wrapper_31');
+        var close31 = $('.close31');
+
         link.on("click", function(event) {
             event.preventDefault();
             menu.removeClass('menu__passive');
@@ -160,6 +167,22 @@
             menu.addClass('menu__passive');
             wrap.addClass('wrap__passive');
         });
+
+        click31.on("click", function(event) {
+            event.preventDefault();
+            desc31.removeClass('des-wrapper__passive');
+            desc31.addClass('des-wrapper__active');
+
+
+        });
+        close31.on("click", function(event) {
+            event.preventDefault();
+            desc31.removeClass('des-wrapper__active');
+            desc31.addClass('des-wrapper__passive');
+        });
+
+
+
     });
 </script>
 
