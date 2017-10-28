@@ -6,7 +6,7 @@
 
 body {
     margin: 0;
-    font-family: "Open Sans", Helvetica, sans-serif;
+    font-family: 'Jura', sans-serif;
     overflow-x: hidden;
     background: rgb(238, 238, 238);
 }
@@ -320,6 +320,9 @@ body {
 }
 
 .project-header {
+    -webkit-box-shadow: inset 0px 2px 3px 0px rgba(173, 171, 173, 1);
+    -moz-box-shadow: inset 0px 2px 3px 0px rgba(173, 171, 173, 1);
+    box-shadow: inset 0px 2px 3px 0px rgba(173, 171, 173, 1);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -336,8 +339,9 @@ body {
     width: fit-content;
     text-align: center;
     border-bottom: solid 2px rgba(0, 0, 0, 0.125);
-    padding-bottom: 20px;
+    padding-bottom: 5px;
     letter-spacing: 0.225em;
+    padding-top: 10px;
 }
 
 .project-header p {
@@ -359,10 +363,12 @@ body {
 
 .left-container {
     width: 60%;
+    height: 85%;
 }
 
 .right-container {
     width: 40%;
+    height: 85%;
 }
 
 .one-left {
@@ -458,4 +464,13 @@ body {
 
 h2 {
     margin: 0px 0px !important;
+}
+
+.footer h4 {
+    font-family: 'Libre Barcode 39 Extended Text', regular;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+    font-weight: normal;
 }
