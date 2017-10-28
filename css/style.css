@@ -8,6 +8,7 @@ body {
     margin: 0;
     font-family: "Open Sans", Helvetica, sans-serif;
     overflow-x: hidden;
+    background: rgb(238, 238, 238);
 }
 
 .full {
@@ -314,7 +315,6 @@ body {
 .project-screen {
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
     height: 100%;
     width: 100%;
 }
@@ -327,9 +327,9 @@ body {
     /* padding-bottom: 50px; */
     /* padding-top: 50px; */
     align-items: center;
-    border: 2px solid red;
     height: 10%;
     width: 100%;
+    background: rgb(238, 238, 238);
 }
 
 .project-header h2 {
@@ -349,6 +349,7 @@ body {
     justify-content: center;
     width: 100%;
     height: 90%;
+    background: rgb(238, 238, 238);
 }
 
 .grid-center {
@@ -358,26 +359,20 @@ body {
 
 .left-container {
     width: 60%;
-    border: 1px solid red;
 }
 
 .right-container {
     width: 40%;
-    border: 1px solid blue;
 }
 
 .one-left {
     height: 50%;
-    border: 2px solid black;
-    background: gray;
     background-origin: content-box;
-    /* margin: 10px 10px; */
 }
 
 .two-left {
     width: 100%;
     height: 50%;
-    border: 2px solid blue;
     display: flex;
     flex-direction: row;
 }
@@ -385,28 +380,82 @@ body {
 .f-left {
     width: 50%;
     height: 100%;
-    border: 1px solid green;
 }
 
 .s-left {
     width: 50%;
     height: 100%;
-    border: 1px solid purple;
 }
 
 .myimages {
-    height: 90%;
+    height: 85%;
     background-size: cover !important;
+    margin: 15px 15px 0px 15px;
 }
 
 .quail {
     background: url(img/1.jpg) no-repeat center;
+    -webkit-box-shadow: 1px 1px 2px 1px rgba(163, 163, 163, 1);
+    -moz-box-shadow: 1px 1px 2px 1px rgba(163, 163, 163, 1);
+    box-shadow: 1px 1px 2px 1px rgba(163, 163, 163, 1);
 }
 
 .dragon {
     background: url(img/2.jpg) no-repeat center;
+    -webkit-box-shadow: 1px 1px 2px 1px rgba(163, 163, 163, 1);
+    -moz-box-shadow: 1px 1px 2px 1px rgba(163, 163, 163, 1);
+    box-shadow: 1px 1px 2px 1px rgba(163, 163, 163, 1);
 }
 
 .animations {
     background: url(img/3.jpg) no-repeat center;
+    -webkit-box-shadow: 1px 1px 2px 1px rgba(163, 163, 163, 1);
+    -moz-box-shadow: 1px 1px 2px 1px rgba(163, 163, 163, 1);
+    box-shadow: 1px 1px 2px 1px rgba(163, 163, 163, 1);
+}
+
+.portfolio {
+    background: url(img/4.jpg) no-repeat center;
+    height: 94.3%;
+    margin: 15px 15px 0px 15px;
+    -webkit-box-shadow: 1px 1px 2px 1px rgba(163, 163, 163, 1);
+    -moz-box-shadow: 1px 1px 2px 1px rgba(163, 163, 163, 1);
+    box-shadow: 1px 1px 2px 1px rgba(163, 163, 163, 1);
+}
+
+.portfolio-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5%;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    /* border: 1px solid red; */
+    margin: 0px 15px 15px 15px;
+    /* margin: 0px 0px !important; */
+    -webkit-box-shadow: 1px 1px 2px 1px rgba(163, 163, 163, 1);
+    -moz-box-shadow: 1px 1px 2px 1px rgba(163, 163, 163, 1);
+    box-shadow: 1px 1px 2px 1px rgba(163, 163, 163, 1);
+    background: white;
+}
+
+.project-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    font-size: 12px;
+    /* margin: 0px 0px !important; */
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0px 15px 15px 15px;
+    -webkit-box-shadow: 1px 1px 2px 1px rgba(163, 163, 163, 1);
+    -moz-box-shadow: 1px 1px 2px 1px rgba(163, 163, 163, 1);
+    box-shadow: 1px 1px 2px 1px rgba(163, 163, 163, 1);
+    background: white;
+}
+
+h2 {
+    margin: 0px 0px !important;
 }
