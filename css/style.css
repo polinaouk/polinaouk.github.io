@@ -328,7 +328,7 @@ body {
     /* padding-top: 50px; */
     align-items: center;
     border: 2px solid red;
-    height: 20%;
+    height: 10%;
     width: 100%;
 }
 
@@ -348,14 +348,12 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 80%;
-    border: 4px solid green;
+    height: 90%;
 }
 
 .grid-center {
-    width: 60%;
+    width: 70%;
     display: flex;
-    border: 1px solid rgb(128, 87, 0);
 }
 
 .left-container {
@@ -369,9 +367,11 @@ body {
 }
 
 .one-left {
-    width: 100%;
     height: 50%;
     border: 2px solid black;
+    background: gray;
+    background-origin: content-box;
+    /* margin: 10px 10px; */
 }
 
 .two-left {
@@ -385,11 +385,28 @@ body {
 .f-left {
     width: 50%;
     height: 100%;
-    border: 2px solid green;
+    border: 1px solid green;
 }
 
 .s-left {
     width: 50%;
     height: 100%;
-    border: 2px solid purple;
+    border: 1px solid purple;
+}
+
+.myimages {
+    height: 90%;
+    background-size: cover !important;
+}
+
+.quail {
+    background: url(img/1.jpg) no-repeat center;
+}
+
+.dragon {
+    background: url(img/2.jpg) no-repeat center;
+}
+
+.animations {
+    background: url(img/3.jpg) no-repeat center;
 }
