@@ -401,7 +401,7 @@ body {
     margin: 15px 15px 0px 15px;
 }
 
-.quail {
+.quailMain {
     background: url(img/1.jpg) no-repeat center;
     -webkit-box-shadow: 1px 1px 2px 1px rgba(163, 163, 163, 1);
     -moz-box-shadow: 1px 1px 2px 1px rgba(163, 163, 163, 1);
@@ -424,7 +424,7 @@ body {
 
 .portfolio {
     background: url(img/4.jpg) no-repeat center;
-    height: 94.3%;
+    height: 94.7%;
     margin: 15px 15px 0px 15px;
     -webkit-box-shadow: 1px 1px 2px 1px rgba(163, 163, 163, 1);
     -moz-box-shadow: 1px 1px 2px 1px rgba(163, 163, 163, 1);
@@ -485,12 +485,17 @@ h2 {
     font-weight: normal;
 }
 
+.footer {
+    z-index: 20;
+}
+
 .window-description {
+    padding: 15px 15px 15px 15px;
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: row;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     justify-content: center;
     align-items: center;
 }
@@ -535,4 +540,23 @@ h2 {
 .links-text p,
 h3 {
     margin: 10px 10px;
+}
+
+.passive {
+    display: none;
+}
+
+.active {
+    display: flex;
+    z-index: 10;
+}
+
+.close-des {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close-des img {
+    height: 50px;
+    width: auto;
 }

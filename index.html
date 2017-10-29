@@ -50,12 +50,12 @@
                     <h2>PROJECTS</h2>
                     <p>hover or click on image</p>
                 </div>
-                <div class="grid">
+                <div class="grid active">
                     <div class="grid-center">
                         <div class="left-container">
                             <div class="l-grid-image">
                                 <div class="one-left">
-                                    <div class="myimages quail">
+                                    <div class="myimages quailMain">
                                     </div>
                                     <div class="project-title">
                                         <h2>website development</h2>
@@ -92,8 +92,77 @@
                         </div>
 
                     </div>
+                    <!-- GENERATIVE -->
+                    <div class="window-description generative passive">
+                        <div class="gap">
+                            <div class="description-img">
+                            </div>
+                            <div class="description-text">
+
+                                <div class="mytext">
+                                    <div class="close-des">
+                                        <img class="closeGen" src="css/img/close.png" alt=""></a>
+                                    </div>
+                                    <h2>GENERATIVE ANIMATIONS</h2>
+                                    <p>Generative animations is a sound-reactive piece in which an envelope follower is used to make the animations move. Made through experimentation with Perlin noise, PI and arithmetic operations. The result is to create
+                                        an experience for viewers with drawings controlled in a noticeable way both visually and through audio input.</p>
+                                    <p>Coding, sound analysis, graphics synthesis</p>
+                                </div>
+                                <div class="links-text">
+                                    <h3>AWARDS</h3>
+                                    <p>Godsmiths Computing Undergrad Show</p>
+
+                                    <h3>LINKS</h3>
+                                    <p>project, git, youtube</p>
+
+                                    <h3>TECH USED</h3>
+                                    <p>JavaScript + p5.js</p>
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- QUAIL -->
+                    <div class="window-description quail passive">
+                        <div class="gap">
+                            <div class="description-img">
+                            </div>
+                            <div class="description-text">
+
+                                <div class="mytext">
+                                    <div class="close-des">
+                                        <img class="closeQuail" src="css/img/close.png" alt=""></a>
+                                    </div>
+                                    <h2>WEBSITE DEVELOPMENT</h2>
+                                    <p>Custom-made website commissioned by Quail London. As the first interaction between client and company the website should draw the user into a uniquely designed space. The site therefore is made from scratch in HTML-CSS(?)
+                                        and uses no templates. Features that were requested include a get-in-touch form, video header, Google analytics and the ability for my client to edit the website. </p>
+                                </div>
+                                <div class="links-text">
+
+                                    <h3>LINKS</h3>
+                                    <p>project, git, youtube</p>
+
+                                    <h3>TECH USED</h3>
+                                    <p>CSS3, HTML5, JavaScript</p>
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
 
                 </div>
+
                 <div class="footer">
                     <h4>2017</h4>
                 </div>
@@ -102,35 +171,7 @@
 
 
 
-            <div class="window-description">
-                <div class="gap">
-                    <div class="description-img">
-                    </div>
-                    <div class="description-text">
-                        <div class="mytext">
-                            <h2>GENERATIVE ANIMATIONS</h2>
-                            <p>Generative animations is a sound-reactive piece in which an envelope follower is used to make the animations move. Made through experimentation with Perlin noise, PI and arithmetic operations. The result is to create an experience
-                                for viewers with drawings controlled in a noticeable way both visually and through audio input.</p>
-                            <p>Coding, sound analysis, graphics synthesis</p>
-                        </div>
-                        <div class="links-text">
-                            <h3>AWARDS</h3>
-                            <p>Godsmiths Computing Undergrad Show</p>
 
-                            <h3>LINKS</h3>
-                            <p>project, git, youtube</p>
-
-                            <h3>TECH USED</h3>
-                            <p>JavaScript + p5.js</p>
-
-
-                        </div>
-
-
-                    </div>
-                </div>
-
-            </div>
         </div>
 
 
@@ -168,9 +209,16 @@
         var menu = $('.menu');
         var wrap = $('.wrap');
 
-        var click31 = $('.t-f');
-        var desc31 = $('.des-wrapper_31');
-        var close31 = $('.close31');
+        var mygrid = $('.grid-center');
+
+        var clickGen = $('.s-left');
+        var openGen = $('.generative');
+        var closeGen = $('.closeGen');
+
+
+        var clickQuail = $('.one-left');
+        var myquail = $('.quail');
+        var closeQuail = $('.closeQuail');
 
         link.on("click", function(event) {
             event.preventDefault();
@@ -188,19 +236,44 @@
             wrap.addClass('wrap__passive');
         });
 
-        click31.on("click", function(event) {
+        //Generative////////////////////////////////////////////////////////////////
+        clickGen.on("click", function(event) {
             event.preventDefault();
-            desc31.removeClass('des-wrapper__passive');
-            desc31.addClass('des-wrapper__active');
+            mygrid.removeClass('active');
+            mygrid.addClass('passive');
 
+            openGen.removeClass('passive');
+            openGen.addClass('active');
 
         });
-        close31.on("click", function(event) {
+        closeGen.on("click", function(event) {
             event.preventDefault();
-            desc31.removeClass('des-wrapper__active');
-            desc31.addClass('des-wrapper__passive');
+            openGen.removeClass('active');
+            openGen.addClass('passive');
+
+            mygrid.removeClass('passive');
+            mygrid.addClass('active');
         });
 
+
+        /////quail//////////////////////////////////////////////////////////////
+        clickQuail.on("click", function(event) {
+            event.preventDefault();
+            mygrid.removeClass('active');
+            mygrid.addClass('passive');
+
+            myquail.removeClass('passive');
+            myquail.addClass('active');
+
+        });
+        closeQuail.on("click", function(event) {
+            event.preventDefault();
+            myquail.removeClass('active');
+            myquail.addClass('passive');
+
+            mygrid.removeClass('passive');
+            mygrid.addClass('active');
+        });
 
 
     });
