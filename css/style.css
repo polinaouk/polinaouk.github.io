@@ -131,6 +131,7 @@ body {
     background-color: rgb(49, 196, 176);
     width: 20vw;
     animation: menu__active 1s;
+    z-index: 999;
     /* transition: 0.8s; */
 }
 
@@ -156,6 +157,7 @@ body {
     background-color: rgb(9, 36, 32);
     width: 0vw;
     animation: menu__passive 1s;
+    z-index: 999;
     /* transition: 0.8s; */
 }
 
