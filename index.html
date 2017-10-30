@@ -63,7 +63,7 @@
                                 </div>
                                 <div class="two-left">
                                     <div class="f-left">
-                                        <div class="myimages dragon">
+                                        <div class="myimages dragonMain">
                                         </div>
                                         <div class="project-title">
                                             <h2>Image processing</h2>
@@ -160,6 +160,73 @@
 
                     </div>
 
+                    <!-- DRAGON -->
+                    <div class="window-description dragon passive">
+                        <div class="gap">
+                            <div class="description-img d-img">
+                            </div>
+                            <div class="description-text">
+
+                                <div class="mytext">
+                                    <div class="close-des">
+                                        <img class="closeDragon" src="css/img/close.png" alt=""></a>
+                                    </div>
+                                    <h2>IMAGE PROCESSING</h2>
+                                    <p>Image processing is a project which I was doing in my free time during the summer of 2017. It is an algorithm which manipulates black and white pixels. Underneath the animation are hidden drawn images in black and white
+                                        colours. The algorithm identifies the black pixels in the image and measures the distances between them, the closes distances are then connected via white lines. </p>
+                                    <p style="font-style:italic">Coding, sound analysis, graphics synthesis</p>
+                                </div>
+                                <div class="links-text">
+
+                                    <h3>LINKS</h3>
+                                    <p>project, git, youtube</p>
+
+                                    <h3>TECH USED</h3>
+                                    <p>CSS3, HTML5, JavaScript</p>
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- POLINAO -->
+                    <div class="window-description polinao passive">
+                        <div class="gap">
+                            <div class="description-img p-img">
+                            </div>
+                            <div class="description-text">
+
+                                <div class="mytext">
+                                    <div class="close-des">
+                                        <img class="closePolinao" src="css/img/close.png" alt=""></a>
+                                    </div>
+                                    <h2>PORTFOLIO WEBSITE</h2>
+                                    <p>Image processing is a project which I was doing in my free time during the summer of 2017. It is an algorithm which manipulates black and white pixels. Underneath the animation are hidden drawn images in black and white
+                                        colours. The algorithm identifies the black pixels in the image and measures the distances between them, the closes distances are then connected via white lines. </p>
+                                    <p style="font-style:italic">Coding, sound analysis, graphics synthesis</p>
+                                </div>
+                                <div class="links-text">
+
+                                    <h3>LINKS</h3>
+                                    <p>project, git, youtube</p>
+
+                                    <h3>TECH USED</h3>
+                                    <p>CSS3, HTML5, JavaScript</p>
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
 
 
                 </div>
@@ -221,6 +288,16 @@
         var myquail = $('.quail');
         var closeQuail = $('.closeQuail');
 
+
+        var clickDragon = $('.f-left');
+        var mydragon = $('.dragon');
+        var closeDragon = $('.closeDragon');
+
+
+        var clickPolinao = $('.right-container');
+        var mypolinao = $('.polinao');
+        var closePolinao = $('.closePolinao');
+
         link.on("click", function(event) {
             event.preventDefault();
             menu.removeClass('menu__passive');
@@ -271,6 +348,46 @@
             event.preventDefault();
             myquail.removeClass('active');
             myquail.addClass('passive');
+
+            mygrid.removeClass('passive');
+            mygrid.addClass('active');
+        });
+
+
+        /////DRAGON//////////////////////////////////////////////////////////////
+        clickDragon.on("click", function(event) {
+            event.preventDefault();
+            mygrid.removeClass('active');
+            mygrid.addClass('passive');
+
+            mydragon.removeClass('passive');
+            mydragon.addClass('active');
+
+        });
+        closeDragon.on("click", function(event) {
+            event.preventDefault();
+            mydragon.removeClass('active');
+            mydragon.addClass('passive');
+
+            mygrid.removeClass('passive');
+            mygrid.addClass('active');
+        });
+
+
+        /////POLINAO//////////////////////////////////////////////////////////////
+        clickPolinao.on("click", function(event) {
+            event.preventDefault();
+            mygrid.removeClass('active');
+            mygrid.addClass('passive');
+
+            mypolinao.removeClass('passive');
+            mypolinao.addClass('active');
+
+        });
+        closePolinao.on("click", function(event) {
+            event.preventDefault();
+            mypolinao.removeClass('active');
+            mypolinao.addClass('passive');
 
             mygrid.removeClass('passive');
             mygrid.addClass('active');
