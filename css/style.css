@@ -401,6 +401,14 @@ body {
     margin: 15px 15px 0px 15px;
 }
 
+.q-img {
+    background: url(img/1.jpg) no-repeat center;
+}
+
+.g-img {
+    background: url(img/3.jpg) no-repeat center;
+}
+
 .quailMain {
     background: url(img/1.jpg) no-repeat center;
     -webkit-box-shadow: 1px 1px 2px 1px rgba(163, 163, 163, 1);
@@ -503,38 +511,56 @@ h2 {
 .gap {
     width: 70%;
     height: 80%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: flex;
     flex-direction: row;
 }
 
 .description-img {
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     width: 55%;
     background-size: cover !important;
-    background: url(img/3-d.jpg) no-repeat center;
+    /* background: url(img/3-d.jpg) no-repeat center; */
+    margin: 0px 10px 0px 10px;
+    -webkit-box-shadow: 5px 5px 15px 1px rgba(156, 156, 156, 1);
+    -moz-box-shadow: 5px 5px 15px 1px rgba(156, 156, 156, 1);
+    box-shadow: 5px 5px 15px 1px rgba(156, 156, 156, 1);
 }
 
 .description-text {
-    border: 1px solid red;
     width: 45%;
     height: 100%;
+    margin: 0px 10px 0px 10px;
 }
 
 .mytext {
     text-align: justify;
-    /* padding: 75px 30px; */
-    height: 60%;
-    border: 2px solid orange;
+    height: calc(60% - 20px);
+    margin: 0px 0px 20px 0px;
+    background: white;
+    -webkit-box-shadow: 5px 5px 15px 1px rgba(156, 156, 156, 1);
+    -moz-box-shadow: 5px 5px 15px 1px rgba(156, 156, 156, 1);
+    box-shadow: 5px 5px 15px 1px rgba(156, 156, 156, 1);
+}
+
+.mytext h2 {
+    padding: 15px 30px;
+}
+
+.mytext p {
+    padding: 10px 30px;
 }
 
 .links-text {
-    border: 1px solid green;
     height: 40%;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: white;
+    -webkit-box-shadow: 5px 5px 15px 1px rgba(156, 156, 156, 1);
+    -moz-box-shadow: 5px 5px 15px 1px rgba(156, 156, 156, 1);
+    box-shadow: 5px 5px 15px 1px rgba(156, 156, 156, 1);
 }
 
 .links-text p,
