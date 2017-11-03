@@ -347,7 +347,9 @@ body {
     margin-top: 160px;
 }
 .main-text h1 {
-    font-size: 1.75em;
+    width: 110%;
+    text-align: center;
+    font-size: 2em;
     margin: 0;
     color: white;
     letter-spacing: 0.225em;
@@ -377,10 +379,12 @@ body {
 .main-text h1:before {
     top: 0;
     left: 0;
+    margin: 10px 0px;
 }
 .main-text h1:after {
     bottom: 0;
     right: 0;
+    margin: 10px 0px;
 }
 .main-text h2:before,
 .main-text h2:after {
@@ -394,6 +398,7 @@ body {
 .main-text p {
     color: #fb3958;
     font-weight: bold;
+    font-size: 1.2em;
 }
 .main-arrow {
     height: 20vh;
