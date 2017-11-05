@@ -372,6 +372,16 @@ body {
     font-weight: bold;
     font-size: 1.2em;
 }
+.loadingp {
+    opacity: 0;
+    transition: 1s ease-in;
+    transition-delay: 1.5s;
+}
+.donep {
+    opacity: 1;
+    transition: 1s ease-in;
+    transition-delay: 1.5s;
+}
 .main-arrow {
     height: 20vh;
 }
