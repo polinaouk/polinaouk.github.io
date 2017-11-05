@@ -17,7 +17,7 @@
     <title>POLINAO</title>
 </head>
 
-<body>
+<body id="transition_disabled">
     <!-- <div class="menu-list"></div> -->
     <div class="full">
 
@@ -36,9 +36,10 @@
 
 
                     </div>
-                    <div class="main-text">
+                    <div class="main-text loading">
 
                         <h1>
+
                             POLINA OLEMSKAIA
                         </h1>
                         <p>creative coder and designer</p>
@@ -120,9 +121,7 @@
                                     <p>Goldsmiths Computing Undergrad Show</p>
 
                                     <h3>LINKS</h3>
-                                    <p><a target="_blank" href="https://github.com/polina9393/Generative-animations">github</a>, <a target="_blank" href="https://www.youtube.com/watch?v=XRO_4YJALQk&feature=youtu.be">youtube</a>
-
-                                    </p>
+                                    <p>demo, github, youtube</p>
 
                                     <h3>TECH USED</h3>
                                     <p>JavaScript + p5.js</p>
@@ -155,9 +154,7 @@
                                 <div class="links-text">
 
                                     <h3>LINKS</h3>
-                                    <p><a target="_blank" href="https://www.quaillondon.com/">website</a>, <a target="_blank" href="https://github.com/polina9393/Website-Development"> github</a>
-
-                                    </p>
+                                    <p>project, git, youtube</p>
 
                                     <h3>TECH USED</h3>
                                     <p>CSS3, HTML5, JavaScript</p>
@@ -183,16 +180,14 @@
                                         <img class="closeDragon" src="css/img/close.png" alt=""></a>
                                     </div>
                                     <h2>IMAGE PROCESSING</h2>
-                                    <p>It is an algorithm which manipulates black and white pixels. Underneath the animation are hidden drawn images in black and white colours. The algorithm identifies the black pixels in the image and measures the distances
-                                        between them, the closes distances are then connected via white lines. </p>
+                                    <p>Image processing is a project which I was doing in my free time during the summer of 2017. It is an algorithm which manipulates black and white pixels. Underneath the animation are hidden drawn images in black and white
+                                        colours. The algorithm identifies the black pixels in the image and measures the distances between them, the closes distances are then connected via white lines. </p>
                                     <p style="font-style:italic">Coding, image analysis, graphic design</p>
                                 </div>
                                 <div class="links-text">
 
                                     <h3>LINKS</h3>
-                                    <p><a target="_blank" href="https://github.com/polina9393/Digital-image-processing"> github</a>, <a target="_blank" href="https://github.com/polina9393/Website-Development"> demo</a>, <a target="_blank" href="https://youtu.be/CB03jQqtR9I"> youtube</a>
-
-                                    </p>
+                                    <p>project, git, youtube</p>
 
                                     <h3>TECH USED</h3>
                                     <p>CSS3, HTML5, JavaScript</p>
@@ -225,9 +220,7 @@
                                 <div class="links-text">
 
                                     <h3>LINKS</h3>
-                                    <p><a target="_blank" href="https://www.polinao.uk">website</a>, <a target="_blank" href="https://github.com/polina9393/polina9393.github.io"> github</a>
-
-                                    </p>
+                                    <p>project, git, youtube</p>
 
                                     <h3>TECH USED</h3>
                                     <p>CSS3, HTML5, JavaScript</p>
@@ -278,9 +271,9 @@
                     <h3>CONTACT</h3>
                     <p>polina.olemskaia@gmail.com</p>
                     <div class="icons">
-                        <a target="_blank" href="https://github.com/polina9393"> <i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
-                        <a target="_blank" href="https://www.linkedin.com/in/polina-olemskaia/"> <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
-                        <a target="_blank" href="https://www.instagram.com/polinao__/"> <i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+                        <a href=""> <i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+                        <a href=""> <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+                        <a href=""> <i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
 
                     </div>
                 </div>
@@ -299,6 +292,19 @@
 
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+<script>
+    // disable animation until page is load
+    // $("window").load(function() {
+    //     $("body").removeAttr("id");
+    // });
+
+    // animation header
+    $(document).ready(function() {
+        $('.main-text').removeClass('loading').addClass('done');
+        // $(".main-text").removeClass(".loading");
+        // $(".main-text").addClass(".done");
+    });
+</script>
 <script>
     $(function() {
         var link = $('.menu-ham');
