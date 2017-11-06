@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400i,600,600i,700,700i,800,800i" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Extended+Text" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 
-    <script src="https://use.fontawesome.com/eddc2cb6ae.js"></script>
+
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <title>POLINAO</title>
@@ -19,6 +19,7 @@
 
 <body id="transition_disabled">
     <!-- <div class="menu-list"></div> -->
+    <div class="overlay overloading"></div>
     <div class="full">
 
         <div class="wrap">
@@ -250,9 +251,6 @@
 
         </div>
 
-
-
-
         <div class="menu">
             <a href="#" class="close-menu">
                 <img src="css/img/close.png" alt=""></a>
@@ -283,25 +281,20 @@
     </div>
 
 
-
-
-
-
-
-
-
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/eddc2cb6ae.js" async></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 <script>
     // disable animation until page is load
-    // $("window").load(function() {
-    //     $("body").removeAttr("id");
-    // });
+    $(window).load(function() {
+        $("body").removeAttr("id");
+    });
 
     // animation header
     $(document).ready(function() {
         $('.main-text').removeClass('loading').addClass('done');
         $('.creative').removeClass('loadingp').addClass('donep');
+        $('.overlay').removeClass('overloading').addClass('overdone');
         // $(".main-text").removeClass(".loading");
         // $(".main-text").addClass(".done");
     });

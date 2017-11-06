@@ -5,6 +5,7 @@
 }
 
 #transition_disable {
+    transition: none !important;
     -webkit-transition: none !important;
     -moz-transition: none !important;
     -ms-transition: none !important;
@@ -45,14 +46,14 @@ body {
     display: flex;
     width: 80vw;
     flex-direction: column;
-    animation: wrap__active 1s;
+    animation: wrap__active 1s ease;
 }
 
 .wrap__passive {
     display: flex;
     width: 100vw;
     flex-direction: column;
-    animation: wrap__passive 1s;
+    animation: wrap__passive 1s ease;
 }
 
 @keyframes wrap__active {
@@ -136,8 +137,9 @@ body {
     padding: 100px 0px 100px 0px;
     align-content: center;
     background-color: #CDD9DC;
+    box-shadow: 0px 0px 150px rgba(0, 0, 0, 0.35), 0px 0px 50px rgba(0, 0, 0, 0.22);
     width: 20vw;
-    animation: menu__active 1s;
+    animation: menu__active 1s ease;
     z-index: 999;
     /* transition: 0.8s; */
     align-items: flex-start;
@@ -146,12 +148,13 @@ body {
 @keyframes menu__active {
     from {
         width: 0vw;
-        background-color: #928D96;
+        background-color: rgb(238, 238, 238);
+        box-shadow: 0px 0px 00px rgba(0, 0, 0, 0.0), 0px 0px 0px rgba(0, 0, 0, 0.0);
     }
     to {
         width: 20vw;
         background-color: #CDD9DC;
-        ;
+        box-shadow: 0px 0px 150px rgba(0, 0, 0, 0.35), 0px 0px 50px rgba(0, 0, 0, 0.22);
     }
 }
 
@@ -161,9 +164,11 @@ body {
     justify-content: space-around;
     padding: 100px 0px 100px 0px;
     align-content: center;
-    background-color: #928D96;
+    /* background-color: #928D96; */
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0), 0px 0px 0px rgba(255, 255, 255, 0);
     width: 0vw;
-    animation: menu__passive 1s;
+    animation: menu__passive 1s ease;
     z-index: 999;
     /* transition: 0.8s; */
 }
@@ -172,10 +177,12 @@ body {
     from {
         width: 20vw;
         background-color: #CDD9DC;
+        box-shadow: 0px 0px 150px rgba(0, 0, 0, 0.35), 0px 0px 50px rgba(0, 0, 0, 0.22);
     }
     to {
         width: 0vw;
-        background-color: #928D96;
+        background-color: rgb(238, 238, 238);
+        box-shadow: 0px 0px 0px rgba(255, 255, 255, 0), 0px 0px 0px rgba(255, 255, 255, 0);
     }
 }
 
@@ -318,6 +325,7 @@ body {
     right: 25px;
 }
 .menu-ham {
+    z-index: 2;
     position: fixed;
     margin-right: 20px;
     padding: 20px 20px;
@@ -352,6 +360,7 @@ body {
     position: relative;
     text-transform: uppercase;
     margin-top: 160px;
+    z-index: 100;
 }
 .main-text h1 {
     width: 110%;
@@ -396,9 +405,7 @@ body {
     width: 100%;
 }
 .project-header {
-    -webkit-box-shadow: inset 0px 2px 3px 0px rgba(173, 171, 173, 1);
-    -moz-box-shadow: inset 0px 2px 3px 0px rgba(173, 171, 173, 1);
-    box-shadow: inset 0px 2px 3px 0px rgba(173, 171, 173, 1);
+    box-shadow: inset 0px 15px 25px -15px rgba(100, 100, 100, 1);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -528,8 +535,6 @@ body {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     background: white;
-    /* font-family: 'Julius Sans One', sans-serif; */
-    
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
     font-weight: 300;
@@ -726,5 +731,70 @@ h3 {
     
     to {
         opacity: 1;
+    }
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: black;
+    opacity: 1;
+    overflow: hidden;
+}
+.overloading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: black;
+    opacity: 1;
+    overflow: hidden;
+    /* animation: overlay 5s ease-in; */
+    /* transition: opacity 5s, z-index 5s; */
+    
+    ;
+}
+.overdone {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: black;
+    opacity: 0;
+    overflow: hidden;
+    animation: overlay 4s ease-in;
+    /* transition: opacity 5s, z-index 5s; */
+    /* animation-delay: 2s; */
+}
+@keyframes overlay {
+    0% {
+        opacity: 1;
+        background: black;
+        z-index: 1;
+    }
+    
+    50% {
+        opacity: 1;
+        background: black;
+        z-index: 1;
+    }
+    
+    85% {
+        opacity: 0.4;
+        background: black;
+        z-index: 1;
+    }
+    
+    100% {
+        opacity: 0;
+        background: black;
+        z-index: 1;
     }
 }
