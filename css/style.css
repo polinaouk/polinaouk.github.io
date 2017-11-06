@@ -330,7 +330,7 @@ body {
     right: 25px;
 }
 .menu-ham {
-    z-index: 2;
+    z-index: 30;
     position: fixed;
     margin-right: 20px;
     padding: 20px 20px;
@@ -408,6 +408,7 @@ body {
     flex-direction: column;
     height: 100%;
     width: 100%;
+    z-index: 2;
 }
 .project-header {
     box-shadow: inset 0px 15px 25px -15px rgba(100, 100, 100, 1);
@@ -578,7 +579,7 @@ h2 {
     font-weight: normal;
 }
 .footer {
-    z-index: 20;
+    z-index: 30;
 }
 .window-description {
     padding: 15px 15px 15px 15px;
@@ -652,6 +653,19 @@ h3 {
     transition: 0.5s ease-in;
 }
 .links-text a:hover {
+    color: #fb3958;
+    transition: 0.5s ease-in;
+}
+.cv a:hover {
+    color: #fb3958;
+    transition: 0.5s ease-in;
+}
+.contact a {
+    color: black;
+    text-decoration: none;
+    transition: 0.5s ease-in;
+}
+.contact a:hover {
     color: #fb3958;
     transition: 0.5s ease-in;
 }
