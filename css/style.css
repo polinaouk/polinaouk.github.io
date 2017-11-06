@@ -291,6 +291,11 @@ body {
     color: rgb(92, 92, 92);
 }
 
+.icons i:hover {
+    color: #fb3958;
+    transition: 0.5s ease-in;
+}
+
 
 }
 .about p {
@@ -640,6 +645,15 @@ h2 {
 .links-text p,
 h3 {
     margin: 10px 10px;
+}
+.links-text a {
+    color: black;
+    text-decoration: none;
+    transition: 0.5s ease-in;
+}
+.links-text a:hover {
+    color: #fb3958;
+    transition: 0.5s ease-in;
 }
 .passive {
     display: none;
