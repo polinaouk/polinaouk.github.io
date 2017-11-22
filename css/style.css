@@ -1233,9 +1233,9 @@
      font-size: 1.5rem;
  }
  
- @media(max-width:1199px) {
+ @media(max-width:1200px) {
      html {
-         font-size: 8px;
+         font-size: 7px;
      }
  }
  
