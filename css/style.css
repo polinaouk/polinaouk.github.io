@@ -1214,7 +1214,7 @@ h3 {
 }
 
 .mytext p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .links-text h3 {
@@ -1230,7 +1230,7 @@ h3 {
 }
 
 .about p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .about a {
@@ -1246,7 +1246,7 @@ h3 {
 }
 
 .contact a {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .p-gallery {
@@ -1338,6 +1338,8 @@ h3 {
         width: 100%;
         /* border: 2px solid red; */
         align-items: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
     }
     /* .p-gallery-padding {
      display: flex;
@@ -1359,6 +1361,24 @@ h3 {
         height: 65%;
         width: 100%;
         background: url(img/2-2.jpg) no-repeat center;
+    }
+    .p-myimage-dr {
+        /* border: 2px solid green; */
+        height: 65%;
+        width: 100%;
+        background: url(img/2.jpg) no-repeat center;
+    }
+    .p-myimage-g {
+        /* border: 2px solid green; */
+        height: 65%;
+        width: 100%;
+        background: url(img/3-p.jpg) no-repeat center;
+    }
+    .p-myimage-po {
+        /* border: 2px solid green; */
+        height: 65%;
+        width: 100%;
+        background: url(img/4.jpg) no-repeat center;
     }
     .p-project-title {
         text-align: center;
