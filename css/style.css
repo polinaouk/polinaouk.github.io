@@ -1278,7 +1278,7 @@ h3 {
 
 @media(max-width:991px) {
     html {
-        font-size: 7px;
+        font-size: 8px;
     }
     /* footer */
     .p-footer h4 {
@@ -1348,7 +1348,7 @@ h3 {
     .p-project {
         height: 90%;
         border: 2px solid blue;
-        width: 75%;
+        width: 90%;
         align-items: center;
         display: flex;
         flex-direction: column;
@@ -1356,9 +1356,9 @@ h3 {
     }
     .p-myimage {
         border: 2px solid green;
-        height: 70%;
+        height: 65%;
         width: 100%;
-        background: url(img/2.jpg) no-repeat center;
+        background: url(img/2-2.jpg) no-repeat center;
     }
     .p-project-title {
         text-align: center;
@@ -1368,5 +1368,29 @@ h3 {
         flex-direction: column;
         align-items: center;
         background: white;
+    }
+    .p-links-text a {
+        color: black;
+        text-decoration: none;
+        transition: 0.5s ease-in;
+        font-size: 1.7rem;
+        /*        
+            color: #fb3958;
+            transition: 0.5s ease-in; */
+    }
+    .p-links-text {
+        font-size: 1.7rem;
+    }
+    .p-links-text h3 {
+        /* margin: 0px 0px; */
+    }
+    .p-project-title p {
+        padding: 0px 10px;
+        font-size: 1.7rem;
+        margin: 6px;
+    }
+    .p-project-title h2 {
+        padding: 20px 0px 0px;
+        font-size: 2rem;
     }
 }
