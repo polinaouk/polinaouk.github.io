@@ -2100,7 +2100,7 @@
      display: none;
  }
  
- @media(max-width:1999px) {
+ @media(max-width:1376px) {
      html {
          font-size: 7.3px;
      }
