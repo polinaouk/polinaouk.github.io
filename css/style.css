@@ -2102,7 +2102,10 @@
  
  @media(max-width:1376px) {
      html {
-         font-size: 7px;
+         font-size: 6px;
+     }
+     .mytext h2 {
+         padding: 0px 30px;
      }
      .close-des img {
          height: 40px;
