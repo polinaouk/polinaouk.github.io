@@ -2149,9 +2149,72 @@
    } */
  }
  
+ @keyframes wrap__activeMini {
+     from {
+         width: 100vw;
+     }
+     to {
+         width: 0vw;
+     }
+ }
+ 
+ @keyframes menu__activeMini {
+     from {
+         width: 0vw;
+         background-color: rgb(238, 238, 238);
+         -webkit-box-shadow: 0px 0px 00px rgba(0, 0, 0, 0.0), 0px 0px 0px rgba(0, 0, 0, 0.0);
+         box-shadow: 0px 0px 00px rgba(0, 0, 0, 0.0), 0px 0px 0px rgba(0, 0, 0, 0.0);
+     }
+     to {
+         width: 100vw;
+         background-color: #CDD9DC;
+         -webkit-box-shadow: 0px 0px 150px rgba(0, 0, 0, 0.35), 0px 0px 50px rgba(0, 0, 0, 0.22);
+         box-shadow: 0px 0px 150px rgba(0, 0, 0, 0.35), 0px 0px 50px rgba(0, 0, 0, 0.22);
+     }
+ }
+ 
+ @keyframes menu__passiveMini {
+     from {
+         width: 100vw;
+         background-color: #CDD9DC;
+         -webkit-box-shadow: 0px 0px 150px rgba(0, 0, 0, 0.35), 0px 0px 50px rgba(0, 0, 0, 0.22);
+         box-shadow: 0px 0px 150px rgba(0, 0, 0, 0.35), 0px 0px 50px rgba(0, 0, 0, 0.22);
+     }
+     to {
+         width: 0vw;
+         background-color: rgb(238, 238, 238);
+         -webkit-box-shadow: 0px 0px 0px rgba(255, 255, 255, 0), 0px 0px 0px rgba(255, 255, 255, 0);
+         box-shadow: 0px 0px 0px rgba(255, 255, 255, 0), 0px 0px 0px rgba(255, 255, 255, 0);
+     }
+ }
+ 
+ @keyframes wrap__passiveMini {
+     from {
+         width: 0vw;
+     }
+     to {
+         width: 100vw;
+     }
+ }
+ 
  @media(max-width:991px) {
      html {
          font-size: 7.5px;
+     }
+     /* menu */
+     .wrap__active {
+         width: 0vw;
+         animation: wrap__activeMini 1s ease;
+     }
+     .menu__active {
+         width: 100vw !important;
+         animation: menu__activeMini 1s ease;
+     }
+     .menu__passive {
+         animation: menu__passiveMini 1s ease;
+     }
+     .wrap__passive {
+         animation: wrap__passiveMini 1s ease;
      }
      /* footer */
      .p-footer h4 {
