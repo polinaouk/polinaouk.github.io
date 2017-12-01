@@ -2131,7 +2131,7 @@
      display: none;
  }
  
- @media(max-width:1376px) {
+ @media(max-width:1449px) {
      html {
          font-size: 6px;
      }
@@ -2343,7 +2343,7 @@
          margin: 6px;
      }
      .p-project-title h2 {
-         padding: 20px 0px 0px;
+         padding: 10px 0px 0px;
          font-size: 2rem;
      }
  }
