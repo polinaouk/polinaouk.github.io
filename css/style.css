@@ -2382,7 +2382,7 @@
   }
   /* phone */
   
-  @media(max-width:991px) {
+  @media(max-width:768px) {
       html {
           font-size: 7.5px;
       }
