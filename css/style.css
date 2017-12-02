@@ -419,6 +419,7 @@
       -webkit-box-align: end;
       -ms-flex-align: end;
       align-items: flex-end;
+      padding-top: 10px;
   }
   
   .cv i {
@@ -730,8 +731,8 @@
   .s-left:hover,
   .f-left:hover {
       cursor: pointer;
-      -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
       -webkit-transition: -webkit-box-shadow 0.3s cubic-bezier(.25, .8, .25, 1);
       transition: -webkit-box-shadow 0.3s cubic-bezier(.25, .8, .25, 1);
       transition: box-shadow 0.3s cubic-bezier(.25, .8, .25, 1);
@@ -759,8 +760,8 @@
   .dis-main .s-left,
   .dis-main .f-left,
   .dis-main .right-container {
-      -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23) !important;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23) !important;
+      -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23) !important;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23) !important;
       -webkit-transition: -webkit-box-shadow 1s cubic-bezier(.25, .8, .25, 1);
       transition: -webkit-box-shadow 1s cubic-bezier(.25, .8, .25, 1);
       transition: box-shadow 1s cubic-bezier(.25, .8, .25, 1);
@@ -2209,6 +2210,7 @@
   
   .about p {
       font-size: 1.8rem;
+      margin: 0px;
   }
   
   .about a {
