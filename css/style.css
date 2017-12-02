@@ -1264,7 +1264,7 @@
   }
   
   .close-des img {
-      height: 10px;
+      height: 35px !important;
       width: auto;
   }
   /* ////////////////animations/////////////// */
