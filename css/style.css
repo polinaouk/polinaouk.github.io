@@ -2130,6 +2130,7 @@
   .p-footer {
       display: none;
   }
+  /* dell */
   
   @media(max-width:1440px) {
       html {
@@ -2151,13 +2152,30 @@
           height: 30px;
       }
   }
+  /* macbook */
   
   @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width:1440px),
   only screen and (min-device-pixel-ratio: 2) and (max-width:1440px) {
       html {
-          font-size: 20px;
+          font-size: 6px;
+      }
+      .mytext h2 {
+          padding: 0px 30px;
+      }
+      .close-des img {
+          height: 40px;
+      }
+      .menu a img {
+          height: 40px;
+      }
+      /* .project-screen {
+     display: none;
+ } */
+      .menu-ham img {
+          height: 30px;
       }
   }
+  /* menu */
   
   @keyframes wrap__activeMini {
       from {
@@ -2206,6 +2224,7 @@
           width: 100vw;
       }
   }
+  /* phone */
   
   @media(max-width:991px) {
       html {
