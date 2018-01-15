@@ -1,6 +1,7 @@
 <html lang="en">
 
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,13 +14,12 @@
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="css/img/icon.jpg" />
 
-
-
     <title>Polina Olemskaia</title>
+    
 </head>
 
 <body id="transition_disabled">
-    <!-- <div class="menu-list"></div> -->
+
     <div class="overlay overloading"></div>
     <div class="full">
 
@@ -28,7 +28,6 @@
                 <div class="main">
                     <div class="header">
                         <div class="logo">
-                            <!-- <h1>Polina</h1> -->
                         </div>
 
                         <a href="#" class="menu-ham">
@@ -47,8 +46,6 @@
                         <p class="creative loadingp">creative coder and designer</p>
                     </div>
                     <div class="main-arrow">
-                        <!-- <img src="css/img/arrow.png" alt=""> -->
-
                     </div>
 
 
@@ -110,7 +107,7 @@
 
                                     <div class="mytext test-shadow">
                                         <div class="close-des">
-                                            <img class="close" src="css/img/close.png" alt=""></a>
+                                            <img class="close" src="css/img/close.png" alt="close">
                                         </div>
                                         <h2>GENERATIVE ANIMATIONS</h2>
                                         <p>It is a sound-reactive piece in which an envelope follower is used to make the animations move. Made through experimentation with Perlin noise, PI and arithmetic operations. The result is to create an experience
@@ -146,7 +143,7 @@
 
                                     <div class="mytext distarget test-shadow">
                                         <div class="close-des">
-                                            <img class="close" src="css/img/close.png" alt=""></a>
+                                            <img class="close" src="css/img/close.png" alt="close">
                                         </div>
                                         <h2>WEBSITE DEVELOPMENT</h2>
                                         <p>Custom-made website commissioned by Quail London. As the first interaction between client and company the website should draw the user into a uniquely designed space. The site therefore is made from scratch in HTML,
@@ -180,7 +177,7 @@
 
                                     <div class="mytext test-shadow">
                                         <div class="close-des">
-                                            <img class="close" src="css/img/close.png" alt=""></a>
+                                            <img class="close" src="css/img/close.png" alt="close">
                                         </div>
                                         <h2>IMAGE PROCESSING</h2>
                                         <p>It is an algorithm which manipulates black and white pixels. Underneath the animation are hidden drawn images in black and white colours. The algorithm identifies the black pixels in the image and measures the distances
@@ -214,7 +211,7 @@
 
                                     <div class="mytext test-shadow">
                                         <div class="close-des">
-                                            <img class="close" src="css/img/close.png" alt=""></a>
+                                            <img class="close" src="css/img/close.png" alt="close">
                                         </div>
                                         <h2>PORTFOLIO WEBSITE</h2>
                                         <p>Static website made from scratch using HTML, CSS and jQuery to present a portfolio of works. The main challenge was to create a completely original website without the use of any ready made third-party scripts.
@@ -255,7 +252,7 @@
             <div class="phone-screen">
                 <div class="p-project-header">
                     <h2>PROJECTS</h2>
-                    <!-- <p>scroll down to see all projects</p> -->
+              
                 </div>
 
                 <!-- quail -->
@@ -399,12 +396,8 @@
         </div>
     </div>
 
-
-</body>
-<!-- <script src="https://use.fontawesome.com/eddc2cb6ae.js" async></script> -->
-<!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script> -->
-<script>
-    // disable animation until page is load
+    <script>
+    // disables animation until page is load
     $(window).load(function() {
         $("body").removeAttr("id");
     });
@@ -420,12 +413,8 @@
         // $(".main-text").removeClass(".loading");
         // $(".main-text").addClass(".done");
     });
-</script>
 
-
-
-<!-- animating description window -->
-<script>
+    
     $.fn.mainToDescr = function(visibleDescr) {
 
 
@@ -563,5 +552,9 @@
 
     });
 </script>
+
+</body>
+
+
 
 </html>
