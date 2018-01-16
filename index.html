@@ -1,7 +1,7 @@
+<!DOCTYPE HTML>
 <html lang="en">
 
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -15,7 +15,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="css/img/icon.jpg" />
 
     <title>Polina Olemskaia</title>
-    
 </head>
 
 <body id="transition_disabled">
@@ -46,6 +45,7 @@
                         <p class="creative loadingp">creative coder and designer</p>
                     </div>
                     <div class="main-arrow">
+
                     </div>
 
 
@@ -107,7 +107,7 @@
 
                                     <div class="mytext test-shadow">
                                         <div class="close-des">
-                                            <img class="close" src="css/img/close.png" alt="close">
+                                            <img class="close" src="css/img/close.png" alt="">
                                         </div>
                                         <h2>GENERATIVE ANIMATIONS</h2>
                                         <p>It is a sound-reactive piece in which an envelope follower is used to make the animations move. Made through experimentation with Perlin noise, PI and arithmetic operations. The result is to create an experience
@@ -143,7 +143,7 @@
 
                                     <div class="mytext distarget test-shadow">
                                         <div class="close-des">
-                                            <img class="close" src="css/img/close.png" alt="close">
+                                            <img class="close" src="css/img/close.png" alt="">
                                         </div>
                                         <h2>WEBSITE DEVELOPMENT</h2>
                                         <p>Custom-made website commissioned by Quail London. As the first interaction between client and company the website should draw the user into a uniquely designed space. The site therefore is made from scratch in HTML,
@@ -177,7 +177,7 @@
 
                                     <div class="mytext test-shadow">
                                         <div class="close-des">
-                                            <img class="close" src="css/img/close.png" alt="close">
+                                            <img class="close" src="css/img/close.png" alt="">
                                         </div>
                                         <h2>IMAGE PROCESSING</h2>
                                         <p>It is an algorithm which manipulates black and white pixels. Underneath the animation are hidden drawn images in black and white colours. The algorithm identifies the black pixels in the image and measures the distances
@@ -211,7 +211,7 @@
 
                                     <div class="mytext test-shadow">
                                         <div class="close-des">
-                                            <img class="close" src="css/img/close.png" alt="close">
+                                            <img class="close" src="css/img/close.png" alt="">
                                         </div>
                                         <h2>PORTFOLIO WEBSITE</h2>
                                         <p>Static website made from scratch using HTML, CSS and jQuery to present a portfolio of works. The main challenge was to create a completely original website without the use of any ready made third-party scripts.
@@ -252,7 +252,6 @@
             <div class="phone-screen">
                 <div class="p-project-header">
                     <h2>PROJECTS</h2>
-              
                 </div>
 
                 <!-- quail -->
@@ -396,165 +395,153 @@
         </div>
     </div>
 
+    <!-- animating description window -->
     <script>
-    // disables animation until page is load
-    $(window).load(function() {
-        $("body").removeAttr("id");
-    });
+        // disable animation until page is load
+        $(window).load(function() {
+            $("body").removeAttr("id");
+        });
 
-    // animation header
-    $(document).ready(function() {
-        $('.main-text').removeClass('loading').addClass('done');
-        $('.creative').removeClass('loadingp').addClass('donep');
-        $('.overlay').removeClass('overloading').addClass('overdone');
+        // animation header
+        $(document).ready(function() {
+            $('.main-text').removeClass('loading').addClass('done');
+            $('.creative').removeClass('loadingp').addClass('donep');
+            $('.overlay').removeClass('overloading').addClass('overdone');
 
+        });
 
-        // $('.mytext *').add('.links-text *').css('opacity', '0');
-        // $(".main-text").removeClass(".loading");
-        // $(".main-text").addClass(".done");
-    });
-
-    
-    $.fn.mainToDescr = function(visibleDescr) {
+        $.fn.mainToDescr = function(visibleDescr) {
 
 
-        $(visibleDescr).addClass('visible');
-        $('.test').removeClass("app-main");
-        $('.test').addClass("dis-main");
-        setTimeout(function() {
-
-            $('.right-container').addClass("marg-cont");
-            $('.left-container').addClass("marg-cont");
-            $('.l-grid-image').addClass("for-one-left");
-            $('.two-left').addClass("two-cont");
-            $('.f-left').addClass("f-cont");
-        }, 1000);
-
-        setTimeout(function() {
-
-            $('.test').switchClass('grid-center', 'desc-center', 100);
-
-        }, 1500);
-        setTimeout(function() {
-            $('.description-img').add('.mytext').add('.links-text').removeClass("test-shadow");
-        }, 2000);
-
-
-        $('.close').click(function() {
-            console.log("close");
-            $('.test').addClass("dis");
-            $('.description-img').add('.mytext').add('.links-text').addClass("test-shadow");
-            $('.l-grid-image').removeClass("for-one-left");
+            $(visibleDescr).addClass('visible');
+            $('.test').removeClass("app-main");
+            $('.test').addClass("dis-main");
             setTimeout(function() {
-                // $('.left-container').add('.right-container').switchClass('marg-cont', 'marg-cont-reverse', 100);
-                $('.left-container').add('.right-container').addClass("marg-cont-reverse");
-                $('.left-container').add('.right-container').removeClass("marg-cont");
-                // $('.one-left').add('.two-left').addClass("one-left-height-reverse");
-                $('.one-left').addClass("one-left-height-reverse");
-                $('.two-left').switchClass('two-cont', 'two-cont-reverse', 1);
-                $('.two-left').addClass("two-left-height-reverse");
-                // $('.two-left').switchClass('two-cont', 'two-cont-reverse', 1);
-                $('.f-left').switchClass('f-cont', 'f-cont-reverse', 1);
+
+                $('.right-container').addClass("marg-cont");
+                $('.left-container').addClass("marg-cont");
+                $('.l-grid-image').addClass("for-one-left");
+                $('.two-left').addClass("two-cont");
+                $('.f-left').addClass("f-cont");
+            }, 1000);
+
+            setTimeout(function() {
+
+                $('.test').switchClass('grid-center', 'desc-center', 100);
+
+            }, 1500);
+            setTimeout(function() {
+                $('.description-img').add('.mytext').add('.links-text').removeClass("test-shadow");
+            }, 2000);
 
 
-                $('.test').switchClass('desc-center', 'grid-center', 1);
-                $('.test').removeClass("dis");
-                $('.test').removeClass("dis-main");
-
-                $('.one-left').add('.right-container').add('.f-left').add('.s-left').addClass("test-shadow");
+            $('.close').click(function() {
+                $('.test').addClass("dis");
+                $('.description-img').add('.mytext').add('.links-text').addClass("test-shadow");
+                $('.l-grid-image').removeClass("for-one-left");
                 setTimeout(function() {
-                    $('.one-left').add('.right-container').add('.f-left').add('.s-left').removeClass("test-shadow");
-                }, 10);
-                $(visibleDescr).removeClass('visible');
-
-                setTimeout(function() {
-                    $('.left-container').add('.right-container').removeClass("marg-cont-reverse");
-                    $('.two-left').removeClass("two-cont-reverse");
-                    // $('.f-left').removeClass("f-cont");
-                    $('.f-left').removeClass("f-cont-reverse");
-                    $('.two-left').removeClass("two-cont");
-
-                    // $('.one-left').removeClass("one-left-height-reverse");
-                    $('.one-left').removeClass("one-left-height-reverse");
-                    $('.two-left').removeClass("two-left-height-reverse");
-                }, 500);
+                    $('.left-container').add('.right-container').addClass("marg-cont-reverse");
+                    $('.left-container').add('.right-container').removeClass("marg-cont");
+                    $('.one-left').addClass("one-left-height-reverse");
+                    $('.two-left').switchClass('two-cont', 'two-cont-reverse', 1);
+                    $('.two-left').addClass("two-left-height-reverse");
+                    $('.f-left').switchClass('f-cont', 'f-cont-reverse', 1);
 
 
-            }, 1700);
+                    $('.test').switchClass('desc-center', 'grid-center', 1);
+                    $('.test').removeClass("dis");
+                    $('.test').removeClass("dis-main");
+
+                    $('.one-left').add('.right-container').add('.f-left').add('.s-left').addClass("test-shadow");
+                    setTimeout(function() {
+                        $('.one-left').add('.right-container').add('.f-left').add('.s-left').removeClass("test-shadow");
+                    }, 10);
+                    $(visibleDescr).removeClass('visible');
+
+                    setTimeout(function() {
+                        $('.left-container').add('.right-container').removeClass("marg-cont-reverse");
+                        $('.two-left').removeClass("two-cont-reverse");
+                        $('.f-left').removeClass("f-cont-reverse");
+                        $('.two-left').removeClass("two-cont");
+                        $('.one-left').removeClass("one-left-height-reverse");
+                        $('.two-left').removeClass("two-left-height-reverse");
+                    }, 500);
+
+
+                }, 1700);
+
+
+
+            });
+
+        };
+
+        $('.one-left').click(function() {
+            $('.one-left').mainToDescr('.quail');
+        });
+        $('.right-container').click(function() {
+            $('.right-container').mainToDescr('.polinao');
+        });
+        $('.f-left').click(function() {
+            $('.f-left').mainToDescr('.dragon');
+        });
+        $('.s-left').click(function() {
+            $('.s-left').mainToDescr('.generative');
+        });
+    </script>
+
+
+
+    <script>
+        $(function() {
+            var link = $('.menu-ham');
+            var close = $('.close-menu');
+            var menu = $('.menu');
+            var wrap = $('.wrap');
+
+            var mygrid = $('.grid-center');
+
+            var clickGen = $('.s-left');
+            var openGen = $('.generative');
+            var closeGen = $('.closeGen');
+
+
+            var clickQuail = $('.one-left');
+            var myquail = $('.quail');
+            var closeQuail = $('.closeQuail');
+
+
+            var clickDragon = $('.f-left');
+            var mydragon = $('.dragon');
+            var closeDragon = $('.closeDragon');
+
+
+            var clickPolinao = $('.right-container');
+            var mypolinao = $('.polinao');
+            var closePolinao = $('.closePolinao');
+
+            link.on("click", function(event) {
+                event.preventDefault();
+                menu.removeClass('menu__passive');
+                wrap.removeClass('wrap__passive');
+                menu.addClass('menu__active');
+                wrap.addClass('wrap__active');
+            });
+
+            close.on("click", function(event) {
+                event.preventDefault();
+                menu.removeClass('menu__active');
+                wrap.removeClass('wrap__active');
+                menu.addClass('menu__passive');
+                wrap.addClass('wrap__passive');
+            });
 
 
 
         });
-
-    };
-
-    $('.one-left').click(function() {
-        $('.one-left').mainToDescr('.quail');
-    });
-    $('.right-container').click(function() {
-        $('.right-container').mainToDescr('.polinao');
-    });
-    $('.f-left').click(function() {
-        $('.f-left').mainToDescr('.dragon');
-    });
-    $('.s-left').click(function() {
-        $('.s-left').mainToDescr('.generative');
-    });
-</script>
-
-
-
-<script>
-    $(function() {
-        var link = $('.menu-ham');
-        var close = $('.close-menu');
-        var menu = $('.menu');
-        var wrap = $('.wrap');
-
-        var mygrid = $('.grid-center');
-
-        var clickGen = $('.s-left');
-        var openGen = $('.generative');
-        var closeGen = $('.closeGen');
-
-
-        var clickQuail = $('.one-left');
-        var myquail = $('.quail');
-        var closeQuail = $('.closeQuail');
-
-
-        var clickDragon = $('.f-left');
-        var mydragon = $('.dragon');
-        var closeDragon = $('.closeDragon');
-
-
-        var clickPolinao = $('.right-container');
-        var mypolinao = $('.polinao');
-        var closePolinao = $('.closePolinao');
-
-        link.on("click", function(event) {
-            event.preventDefault();
-            menu.removeClass('menu__passive');
-            wrap.removeClass('wrap__passive');
-            menu.addClass('menu__active');
-            wrap.addClass('wrap__active');
-        });
-
-        close.on("click", function(event) {
-            event.preventDefault();
-            menu.removeClass('menu__active');
-            wrap.removeClass('wrap__active');
-            menu.addClass('menu__passive');
-            wrap.addClass('wrap__passive');
-        });
-
-
-
-    });
-</script>
+    </script>
 
 </body>
-
 
 
 </html>
